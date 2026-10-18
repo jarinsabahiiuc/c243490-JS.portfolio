@@ -1,144 +1,120 @@
 # c243490-JS.portfolio
 The original version of my Jarin Sabah's portfolio code: Personal portfolio website of c-243490, Jarin Sabah, a CSE student at IIUC, built with HTML, CSS and JavaScript. Showcases projects, services and skills in a clean, responsive layout.
-# Sabah — Personal Portfolio
 
-A responsive personal portfolio website for **Sabah**, a Computer Science & Engineering student at the International Islamic University Chittagong (IIUC), aspiring software developer and UI/UX designer.
+# Sabah — Personal Portfolio Website
 
-Built with plain **HTML, CSS and JavaScript** — no build step, no framework.
+A personal portfolio website showcasing my background as a Computer Science and Engineering student, along with my projects, technical skills, creative interests, and services.
+The website is built using HTML, CSS, and JavaScript with a clean, modern design and responsive layout.
 
-> Always learning. Always creating. Always growing.
+## ✨ Features
 
----
+- **Home:** Introduction and links to explore my work or contact me.
+- **About Me:** Academic background, interests, and personal introduction.
+- **Featured Projects:** A showcase of five projects and concepts.
+- **My Services:** Web development, UI/UX design, graphic design, and app/backend concepts.
+- **Skills:** Technical skills, programming languages, development tools, and creative tools.
+- **Contact:** A contact form and social media links.
+- **Responsive Layout:** Designed to adapt to different screen sizes.
+- **Interactive Navigation:** Mobile navigation menu and section links.
+- **Visual Elements:** Custom logo, favicon, project previews, and icons.
+- **Scroll-to-Top Button:** Quick navigation back to the top of the page.
 
-## Sections
+## 🛠️ Technologies Used
 
-| Section | What it shows |
+| Technology | Purpose |
 |---|---|
-| **Home** | Intro, portrait, typing animation, rotating text ring, social links |
-| **About** | Short bio, education, key numbers, interests |
-| **Works** | Swipeable slider of 5 featured projects |
-| **My Services** | Accordion with 4 services |
-| **Skills** | Frontend, Backend and Design icons |
-| **My Approach** | Personal philosophy |
-| **Contact** | Message form |
-| **Footer** | Logo, tagline, social links |
+| HTML5 | Website structure and content |
+| CSS3 | Styling, layout, and responsive design |
+| JavaScript | Interactive features and navigation |
+| Remix Icon | Interface and social media icons |
+| Devicon | Technology and programming language icons |
+| Google Fonts | Typography using Poppins and Syne |
+| Git & GitHub | Version control and project hosting |
 
----
+## 📁 Project Structure
 
-## Folder structure
-
-```
+```text
 sabah-portfolio/
-├── index.html            # Page content (all sections)
-├── README.md             # This file
+│
+├── index.html
+│
 └── assets/
     ├── css/
-    │   └── styles.css    # All styling + responsive breakpoints
+    │   └── styles.css
+    │
     ├── js/
-    │   └── main.js       # Menu, typing text, slider, accordion, form, animations
+    │   └── main.js
+    │
     └── img/
-        ├── logo.png          # "j." monogram (nav + footer)
-        ├── favicon.png       # Browser tab icon
-        ├── home-img.png      # Portrait on the home section
-        └── work-img-1..5.png # Project preview images
+        ├── favicon.png
+        ├── logo.png
+        ├── home-img.png
+        ├── work-img-1.png
+        ├── work-img-2.png
+        ├── work-img-3.png
+        ├── work-img-4.png
+        └── work-img-5.png
 ```
 
----
+## 🚀 How to Run Locally
 
-## How to run
+You can run this project on your computer without installing a framework or backend.
 
-1. Unzip the project.
-2. Double-click `index.html` to open it in your browser.
+1. Clone the repository:
 
-That's it. An internet connection is needed because fonts, icons and the helper libraries load from a CDN.
+   ```bash
+   git clone https://github.com/jarinsabahiiuc/sabah-portfolio.git
+   ```
 
-For live reload while editing, use the **Live Server** extension in VS Code (right-click `index.html` → *Open with Live Server*).
+2. Open the project folder:
 
----
+   ```bash
+   cd sabah-portfolio
+   ```
 
-## Libraries used (loaded from CDN)
+3. Open the folder in Visual Studio Code.
 
-- [Remix Icon](https://remixicon.com/) — UI icons
-- [Devicon](https://devicon.dev/) — technology icons in Skills
-- [Swiper](https://swiperjs.com/) — project slider
-- [Typed.js](https://github.com/mattboldt/typed.js) — typing text on Home
-- [ScrollReveal](https://scrollrevealjs.org/) — scroll animations
-- [EmailJS](https://www.emailjs.com/) — sending the contact form
-- Google Fonts — Poppins and Syne
+4. Open `index.html` using the **Live Server** extension, or open the file directly in your web browser.
 
----
+5. Explore the website and test its navigation and responsive layout.
 
-## Customise it
+## 📱 Responsive Design
 
-### Change the colours
-Open `assets/css/styles.css` and edit the variables at the top (`:root`). The palette comes from the logo: charcoal `#2a2a2a` and warm off-white `#e6e5e1`.
+The website is intended to work across desktop, tablet, and mobile screen sizes.
 
-### Change the text
-Everything you read on the page lives in `index.html`. Search for the text you want to change and edit it.
+To test responsiveness, use your browser's Developer Tools and inspect the website at different viewport widths.
 
-- **Typing roles:** `strings` list in `main.js`, under *HOME TYPED JS*
-- **Projects:** each project is one block inside the `work__swiper` section
-- **Skills:** each skill is one `skills__item` — change the icon class and the name
+Recommended test widths:
 
-### Replace project images
-Swap `assets/img/work-img-1.png` … `work-img-5.png` with real screenshots, keeping the same file names. Use about a 3:2 shape (for example 1200 × 800 px).
+- Mobile: 375px
+- Tablet: 768px
+- Laptop: 1024px
+- Desktop: 1440px
 
-### Update social links
-In `index.html`, replace the `https://github.com/`, LinkedIn, Behance and Instagram links with your own profile URLs. They appear twice: in the Home section and in the footer.
+## 🎯 Project Objectives
 
-### Add testimonials later
-The testimonials section is left out until there is genuine feedback to show. When you have some, add a new section between *Approach* and *Contact*, plus its styles.
+- Apply HTML, CSS, and JavaScript concepts in a practical project.
+- Develop a personal portfolio to present my skills and projects.
+- Practice responsive web design and interactive user interfaces.
+- Gain hands-on experience with Git and GitHub version control.
+- Build a foundation for future web development projects.
 
----
+## 👩‍💻 About Me
 
-## Set up the contact form
+I'm Sabah, a Computer Science and Engineering student at the **International Islamic University Chittagong (IIUC)**. I'm interested in software development, UI/UX design, graphic design, and creating useful digital experiences.
+I believe in learning by doing and continuously improving my technical and creative skills through projects.
 
-The form works in two ways:
+## 📬 Connect With Me
 
-- **Before setup:** it opens the visitor's email app with the message filled in.
-- **After setup:** it sends the message straight to your inbox using EmailJS.
+- GitHub: [jarinsabahiiuc](https://github.com/jarinsabahiiuc)
+- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/)
+- Behance: [My Behance Profile](https://www.behance.net/)
+- Instagram: [My Instagram Profile](https://www.instagram.com/)
 
-To turn on EmailJS:
+## 📄 License
 
-1. Create a free account at [emailjs.com](https://www.emailjs.com/).
-2. Add an email service and a template. Use these template variables: `user_name`, `user_email`, `message`.
-3. Open `assets/js/main.js`, find *CONTACT EMAIL JS*, and fill in:
+This project was created for personal portfolio development and academic learning. All rights reserved unless otherwise stated.
 
-```js
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY',
-      EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID',
-      EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID',
-      FALLBACK_EMAIL      = 'your-email@example.com'
-```
+**Always learning. Always creating. Always growing.**
 
----
-
-## Responsive design
-
-The layout adapts to these screen sizes:
-
-| Breakpoint | Layout |
-|---|---|
-| Under 540px | Phones — single column, slide-in menu |
-| 540px and up | Large phones — wider menu, 2-column skills |
-| 768px and up | Tablets — 2-column About and Contact, 2 projects per row |
-| 1150px and up | Desktop — full top menu, 3 projects per row, custom cursor |
-| 2048px and up | Large screens — slightly scaled up |
-
----
-
-## Publish it for free
-
-Any static host works. Two easy options:
-
-- **GitHub Pages** — push the folder to a repository, then *Settings → Pages → Deploy from branch*.
-- **Netlify** — drag and drop the project folder onto [app.netlify.com/drop](https://app.netlify.com/drop).
-
----
-
-## Credits
-
-- Design and content: Sabah
-- Starter structure follows the Bedimcode responsive portfolio tutorial
-
-&copy; 2026 Sabah. All rights reserved.
+© 2026 Sabah
