@@ -71,28 +71,30 @@ function typeRole() {
 
 typeRole();
 
+console.log("Services JavaScript reached");
 
-// ================= 3. SERVICES (CLICK TO OPEN) =================
+ // ================= 3. SERVICES (CLICK TO OPEN) =================
 var services = document.querySelectorAll(".service");
 
-for (var j = 0; j < services.length; j++) {
-   var top = services[j].querySelector(".service-top");
+services.forEach(function (service) {
+   var serviceTop = service.querySelector(".service-top");
 
-   top.addEventListener("click", function () {
-      var card = this.parentElement;
-      var wasOpen = card.classList.contains("open");
+   if (serviceTop) {
+      serviceTop.addEventListener("click", function () {
+         var wasOpen = service.classList.contains("open");
 
-      // close all cards first
-      for (var k = 0; k < services.length; k++) {
-         services[k].classList.remove("open");
-      }
+         // Close all service cards
+         services.forEach(function (item) {
+            item.classList.remove("open");
+         });
 
-      // open the clicked card (unless it was already open)
-      if (!wasOpen) {
-         card.classList.add("open");
-      }
-   });
-}
+         // Open the clicked card if it was closed
+         if (!wasOpen) {
+            service.classList.add("open");
+         }
+      });
+   }
+});
 
 
 // ================= 4. SCROLL EFFECTS =================
