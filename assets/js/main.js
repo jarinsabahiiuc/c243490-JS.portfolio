@@ -73,6 +73,7 @@ typeRole();
 
 console.log("Services JavaScript reached");
 
+
  // ================= 3. SERVICES (CLICK TO OPEN) =================
 var services = document.querySelectorAll(".service");
 
@@ -95,7 +96,6 @@ services.forEach(function (service) {
       });
    }
 });
-
 
 // ================= 4. SCROLL EFFECTS =================
 var header = document.getElementById("header");
